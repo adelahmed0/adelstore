@@ -1,14 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import ProductPrice from "@/components/shared/product/product-price";
 
 type ProductCardProps = {
@@ -43,9 +35,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
           )}
         </div>
       </CardContent>
-      <CardFooter>
-        <p>Card Footer</p>
-      </CardFooter>
     </Card>
   );
 };
